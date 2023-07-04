@@ -6,8 +6,7 @@ import { animateScroll as scroll } from "react-scroll";
 import { Link, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 import ModalDonaciones from "./ModalDonaciones";
-
-
+import Noticias from './noticias.jsx';
 
 const NavBar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -135,9 +134,11 @@ const NavBar = () => {
               Nosotros
             </Link>
           </li>
-    
-
-
+          <li className="py-6 text-4xl">
+            <Link to="/noticias" onClick={ejecutador}>
+              Noticias
+            </Link>
+          </li>
           <li className="py-6 text-4xl">
             <Link>
               <ModalDonaciones />
@@ -156,6 +157,7 @@ const NavBar = () => {
           </li> :           <li className="py-6 text-4xl" onClick={handleClick}>
             <a href="#form">Incorpórate</a>
           </li> }
+
 
           <li className="py-6 text-4xl">
             <a
@@ -194,7 +196,13 @@ const NavBar = () => {
             >
               Nosotros
             </Link>
-            
+            <Link
+              to="/noticias"
+              className="flex-1 text-center hover:text-[20px] transition-all duration-400 ease-in-out hidden md:block"
+              onClick={() => scroll.scrollToTop({ duration: 500 })}
+            >
+              Noticias
+            </Link>
             <li className="flex-1 text-center hover:text-[20px] transition-all duration-400 ease-in-out hidden md:block">
               <ModalDonaciones />
             </li>

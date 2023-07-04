@@ -43,7 +43,7 @@ const Footer = () => {
           </div>
           <div className={`${windowWidth < 693 ? "" : "text-[20px]"}`}>
             <a href="mailto:informaciones@yunkaatuq.org" target="a_blank">
-              informaciones@yunkaatuq.org
+              informaciones@yunkaatoq.org
             </a>
           </div>
         </div>

@@ -300,6 +300,11 @@ textarea[name="message"]::placeholder {
   transition: opacity 0.3s ease-in-out;
 }
 
+.image-containers {
+  position: relative;
+}
+
+
 .image-container:hover::before {
   opacity: 1;
 }
@@ -547,5 +552,25 @@ textarea[name="message"]::placeholder {
 
   .divF2 {
     grid-area: 7 / 1 / 11 / 7;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .image-containers {
+    position: relative;
+  }
+  .caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    font-size: 14px;
   }
 }
