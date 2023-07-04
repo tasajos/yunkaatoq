@@ -7,6 +7,8 @@ import { Link, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 import ModalDonaciones from "./ModalDonaciones";
 
+
+
 const NavBar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [nosotros, setNosotros] = useState(false);
@@ -133,6 +135,9 @@ const NavBar = () => {
               Nosotros
             </Link>
           </li>
+    
+
+
           <li className="py-6 text-4xl">
             <Link>
               <ModalDonaciones />
@@ -189,11 +194,13 @@ const NavBar = () => {
             >
               Nosotros
             </Link>
+            
             <li className="flex-1 text-center hover:text-[20px] transition-all duration-400 ease-in-out hidden md:block">
               <ModalDonaciones />
             </li>
           </ul>
         </div>
+       
         <div className="flex-1 px-20">
           <ul className="flex justify-between">
             <li className="flex-1 text-center hover:text-[20px] transition-all duration-400 ease-in-out hidden md:block">

@@ -7,6 +7,7 @@ import SerParte from "./SerParte";
 import Identidad from "./Identidad";
 import Form from "./Form"
 
+
 const Nosotros = () => {
     return (
         <div id="nosotros">
@@ -17,6 +18,8 @@ const Nosotros = () => {
             <ArbolDeLaVida />
             <SerParte />
             <Form />
+          
+          
         </div>
     );
 };
